@@ -1,0 +1,13 @@
+@base <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<LukVerhelst> a foaf:Person ;
+    foaf:name "Luk Verhelst" ;
+    foaf:knows <SteenlantNicolas>, <VervaeckNicolas> ;
+    foaf:based_near wd:Q20127595 ; # Tours and Taxis park.
+    foaf:workplaceHomepage <https://www.vlaanderen.be/cjm/nl> ;
+    schema:email <mailto:luk.verhelst@vlaanderen.be> ;
+    foaf:dateOfBirth "1972-11-19"^^schema:Date .
