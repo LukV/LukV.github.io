@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" prefix="schema: http://schema.org/ 
-                        foaf: http://xmlns.com/foaf/0.1/">
+<html lang="en" prefix="schema: http://schema.org/ foaf: http://xmlns.com/foaf/0.1/">
 <head>
     <base href="http://lukv.github.io/">
     <title>Luk Verhelst</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f0f0f0; /* light gray background */
-            font-family: 'Open Sans', sans-serif; /* Open Sans font */
+            background-color: #f5f5f5; /* light gray background */
+            font-family: 'Roboto', sans-serif; /* Roboto font */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,17 +21,37 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* subtle shadow for a bit of depth */
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #333; /* dark gray for the name */
+        }
+        p {
+            color: #666; /* slightly lighter gray for the text */
+            margin-bottom: 10px; /* add a bit of space between paragraphs */
+        }
+        .job-title {
+            font-size: 1.2em; /* larger font size for job title */
+            color: #007bff; /* blue color for job title to make it stand out */
+            font-weight: bold; /* make the job title bold */
+        }
+        a {
+            color: #007bff; /* blue color for links */
+            text-decoration: none; /* remove underline from links */
+        }
+        a:hover {
+            text-decoration: underline; /* underline links on hover */
         }
     </style>
 </head>
-<body typeof="Person">
+<body typeof="foaf:Person">
     <div id="me">
         <h1 property="foaf:name">Luk Verhelst</h1>
-        <p property="schema:jobTitle">Data engineer</p>
+        <p class="job-title" property="schema:jobTitle">Data engineer</p>
         <p>Email: <a href="mailto:luk.verhelst@vlaanderen.be" property="schema:email">luk.verhelst@vlaanderen.be</a></p>
         <p>Works at: <a href="https://www.vlaanderen.be/cjm/nl" property="foaf:workplaceHomepage">www.vlaanderen.be/cjm/nl</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lukverhelst/"  property="foaf:workplaceHomepage">www.linkedin.com/in/lukverhelst</a></p>
-        <p>Based Near: <a href="http://www.wikidata.org/entity/Q20127595" property="foaf:based_near">Tours and Taxis park</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lukverhelst/"  property="schema:url">www.linkedin.com/in/lukverhelst</a></p>
     </div>
     <script type="text/turtle">
         @base <http://lukv.github.io/> .
