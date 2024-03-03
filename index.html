@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f5f5; /* light gray background */
-            font-family: 'Roboto', sans-serif; /* Roboto font */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            font-family: 'Roboto', sans-serif; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,31 +17,32 @@
             box-sizing: border-box;
         }
         #me {
-            background-color: #fff; /* white background for the content */
+            background-color: #fff; 
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* subtle shadow for a bit of depth */
+            border-radius: 3px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
             max-width: 400px;
             text-align: center;
         }
         h1 {
-            color: #333; /* dark gray for the name */
+            color: #333; 
         }
         p {
-            color: #666; /* slightly lighter gray for the text */
-            margin-bottom: 10px; /* add a bit of space between paragraphs */
+            color: #666; 
+            margin-bottom: 10px; 
         }
         .job-title {
-            font-size: 1.2em; /* larger font size for job title */
-            color: #007bff; /* blue color for job title to make it stand out */
-            font-weight: bold; /* make the job title bold */
+            color: #333; 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            margin-bottom: 25px !important; 
         }
         a {
-            color: #007bff; /* blue color for links */
-            text-decoration: none; /* remove underline from links */
+            color: #23a6d5; 
+            text-decoration: none; 
         }
         a:hover {
-            text-decoration: underline; /* underline links on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -62,14 +63,17 @@
         @prefix solid: <http://www.w3.org/ns/solid/terms#> .
 
         <#me> a foaf:Person ;
-            foaf:name "Luk Verhelst" ;
-            foaf:knows <https://users.ugent.be/~jcunhame/#me> ;
-            foaf:based_near wd:Q20127595 ; # Tours and Taxis park.
-            foaf:workplaceHomepage <https://www.vlaanderen.be/cjm/nl> ;
-            schema:email <mailto:luk.verhelst@vlaanderen.be> ;
-            foaf:dateOfBirth "1972-11-19"^^xsd:date ;
-            schema:jobTitle "Data Engineer" ;
-            solid:oidcIssuer <https://lukv.github.io/webid.ttl#this> .
+        foaf:name "Luk Verhelst" ;
+        foaf:knows <https://users.ugent.be/~jcunhame/#me> ;
+        foaf:based_near wd:Q20127595 ; # Tours and Taxis park.
+        foaf:workplaceHomepage <https://www.vlaanderen.be/cjm/nl> ;
+        schema:email <mailto:luk.verhelst@vlaanderen.be> ;
+        foaf:dateOfBirth "1972-11-19"^^xsd:date ;
+        schema:jobTitle "Data Engineer" .
+
+        <webid.ttl#this> a foaf:PersonalProfileDocument ;
+            foaf:maker <webid.ttl#this> ;
+            foaf:primaryTopic <webid.ttl#this> .
     </script>
 </body>
 </html>
