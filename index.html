@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" prefix="schema: http://schema.org/ 
+                        foaf: http://xmlns.com/foaf/0.1/">
 <head>
     <base href="http://lukv.github.io/">
     <title>Luk Verhelst</title>
@@ -24,21 +25,22 @@
         }
     </style>
 </head>
-<body vocab="http://xmlns.com/foaf/0.1/ http://www.w3.org/2001/XMLSchema#" typeof="Person">
+<body typeof="Person">
     <div id="me">
-        <h1 property="name">Luk Verhelst</h1>
+        <h1 property="foaf:name">Luk Verhelst</h1>
+        <p property="schema:jobTitle">Data engineer</p>
         <p>Email: <a href="mailto:luk.verhelst@vlaanderen.be" property="schema:email">luk.verhelst@vlaanderen.be</a></p>
-        <p>Homepage: <a href="https://www.vlaanderen.be/cjm/nl" property="workplaceHomepage">www.vlaanderen.be/cjm/nl</a></p>
-        <p>Date of Birth: <time property="schema:dateOfBirth" datetime="1972-11-19">November 19, 1972</time></p>
-        <p>Based Near: <a href="http://www.wikidata.org/entity/Q20127595" property="based_near">Tours and Taxis park</a></p>
-        <p>Knows: <a href="https://users.ugent.be/~jcunhame/#me" property="knows">Jorge Cunha Mendesa</a></p>
+        <p>Works at: <a href="https://www.vlaanderen.be/cjm/nl" property="foaf:workplaceHomepage">www.vlaanderen.be/cjm/nl</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lukverhelst/"  property="foaf:workplaceHomepage">www.linkedin.com/in/lukverhelst</a></p>
+        <p>Based Near: <a href="http://www.wikidata.org/entity/Q20127595" property="foaf:based_near">Tours and Taxis park</a></p>
     </div>
     <script type="text/turtle">
         @base <http://lukv.github.io/> .
         @prefix foaf: <http://xmlns.com/foaf/0.1/> .
         @prefix wd: <http://www.wikidata.org/entity/> .
         @prefix schema: <http://schema.org/> .
-        @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+        @prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+        @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 
         <#me> a foaf:Person ;
             foaf:name "Luk Verhelst" ;
@@ -46,7 +48,9 @@
             foaf:based_near wd:Q20127595 ; # Tours and Taxis park.
             foaf:workplaceHomepage <https://www.vlaanderen.be/cjm/nl> ;
             schema:email <mailto:luk.verhelst@vlaanderen.be> ;
-            foaf:dateOfBirth "1972-11-19"^^schema:Date .
+            foaf:dateOfBirth "1972-11-19"^^xsd:date ;
+            schema:jobTitle "Data Engineer" ;
+            solid:oidcIssuer <https://lukv.github.io/webid.ttl#this> .
     </script>
 </body>
 </html>
