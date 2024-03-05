@@ -1,16 +1,15 @@
-
 # Luk Verhelst's Profile Page
 
 ## Overview
 
-This profile page is a straightforward, client-side HTML document. It leverages RDFa for semantic annotation of HTML content and includes additional profile information in Turtle format. The profile page is hosted on GitHub pages at URL https://lukv.github.io/#me
+This profile page at https://lukv.github.io/#me is a straightforward, client-side HTML document. It leverages RDFa for semantic annotation of HTML content and includes additional profile information in Turtle format. The profile page is hosted on GitHub pages, from https://github.com/LukV/lukv.github.io.
 
 ## HTTP Headers Insights
 
 Sending an HTTP request with curl:
 
 ```bash
-curl -IL  http://lukv.github.io/\#me
+curl -IL  http://lukv.github.io/#me
 ```
 
 reveales these access and caching strategies for the page:
