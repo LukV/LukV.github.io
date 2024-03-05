@@ -3,11 +3,10 @@
 <head>
     <base href="http://lukv.github.io/">
     <title>Luk Verhelst</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(-45deg, #23a6d5, #23d5ab);
-            font-family: 'Roboto', sans-serif; 
+            font-family: sans-serif; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,22 +21,16 @@
             border-radius: 4px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
         }
-        a {
-            color: #23a6d5; 
-            text-decoration: none; 
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
-<body typeof="foaf:Person">
-    <div id="me">
+<body>
+    <div id="me" typeof="foaf:Person" resource="https://lukv.github.io/#me">
         <h1 property="foaf:name">Luk Verhelst</h1>
-        <p class="job-title" property="schema:jobTitle">Data engineer</p>
-        <p>Email: <a href="mailto:luk.verhelst@vlaanderen.be" property="schema:email">luk.verhelst@vlaanderen.be</a></p>
-        <p>Works at: <a href="https://www.vlaanderen.be/cjm/nl" property="foaf:workplaceHomepage">www.vlaanderen.be/cjm/nl</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lukverhelst/"  property="schema:url">www.linkedin.com/in/lukverhelst</a></p>
+        <p property="schema:jobTitle">Data engineer</p>
+        <p>Email: <a href="mailto:luk.verhelst@vlaanderen.be">luk.verhelst@vlaanderen.be</a></p>
+        <p>Works at: <a href="https://www.vlaanderen.be/cjm/nl">www.vlaanderen.be/cjm/nl</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lukverhelst/" property="schema:url">www.linkedin.com/in/lukverhelst</a></p>
+        <p><a href="https://rdf-play.rubensworks.net/#url=https%3A%2F%2Flukv.github.io%2F%23me&proxy=https%3A%2F%2Fproxy.linkeddatafragments.org%2F" property="schema:url">RDF triples at RDF Play</a></p>
     </div>
     <script type="text/turtle">
         @base <http://lukv.github.io/> .
@@ -49,7 +42,8 @@
 
         <#me> a foaf:Person ;
         foaf:name "Luk Verhelst" ;
-        foaf:knows <https://users.ugent.be/~jcunhame/#me> ;
+        foaf:knows <https://users.ugent.be/~jcunhame/#me>, 
+            <https://brakke.net/#nil> ;
         foaf:based_near wd:Q20127595 ; # Tours and Taxis park.
         foaf:workplaceHomepage <https://www.vlaanderen.be/cjm/nl> ;
         schema:email <mailto:luk.verhelst@vlaanderen.be> ;
@@ -59,6 +53,12 @@
         <webid.ttl#this> a foaf:PersonalProfileDocument ;
             foaf:maker <webid.ttl#this> ;
             foaf:primaryTopic <webid.ttl#this> .
+
+        @prefix schema: <http://schema.org/>.
+
+        <https://pietercolpaert.be/teaching/kg/#2023-2024>
+            a schema:CourseInstance;
+            schema:attendee <#me> .
     </script>
 </body>
 </html>
