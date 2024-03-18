@@ -17,4 +17,4 @@ photo:lukbelpaire a photo:Photograph ;
 
 <https://lukv.github.io/#me> a photo:Photographer ;
     foaf:name "Luk Verhelst" ;
-    foaf:mbox <mailto:luk.verhelst@gmail.com> .
+    foaf:mbox "mailto:luk.verhelst@gmail.com" .
