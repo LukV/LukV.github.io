@@ -6,7 +6,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <http://schema.org/> .
 
-<https://lukv.github.io/vocab/photo.ttl#>
+<https://lukv.github.io/vocab/photo#>
     dc:title "A photograph vocabulary" ;
     a owl:Ontology .
 
