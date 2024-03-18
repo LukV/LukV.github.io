@@ -19,7 +19,6 @@ photo:Photograph a rdfs:Class ;
 
 photo:Photographer a rdfs:Class ;
     rdfs:label "Photographer" ;
-    rdfs:subClassOf foaf:Person ;
     owl:equivalentClass foaf:Person .
 
 photo:apertureSize a rdf:Property ;
