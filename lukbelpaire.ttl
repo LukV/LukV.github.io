@@ -14,7 +14,3 @@ photo:lukbelpaire a photo:Photograph ;
     photo:shutterSpeed "1/529" ;
     photo:focalLength 6.86 ;
     photo:isoSensitivity 80 .
-
-<https://lukv.github.io/#me> a photo:Photographer ;
-    foaf:name "Luk Verhelst" ;
-    foaf:mbox "mailto:luk.verhelst@gmail.com" .
