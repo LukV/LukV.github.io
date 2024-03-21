@@ -19,4 +19,4 @@
    solid:oidcIssuerRegistrationToken "22d8fff2-6d77-40d4-bc67-521490da3245" ;
    solid:oidcIssuer <http://localhost:3000> . 
 
-<#this> solid:oidcIssuerRegistrationToken "f98b0f46-2c31-4d72-bb14-b86af5d33f37" .
+<#this> solid:oidcIssuer <https://pod.playground.solidlab.be/>.
