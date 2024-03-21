@@ -3,11 +3,24 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix og: <http://ogp.me/ns#> .
+
 
 <#me> a foaf:Person ;
     foaf:name "Luk Verhelst" ;
-    foaf:knows <https://users.ugent.be/~jcunhame/#me> ;
+    foaf:knows <https://brakke.net/#nil> , 
+        <https://kurijn.github.io/#me> ;
     foaf:based_near wd:Q20127595 ; # Tours and Taxis park.
     foaf:workplaceHomepage <https://www.vlaanderen.be/cjm/nl> ;
-    schema:email <mailto:luk.verhelst@vlaanderen.be> ;
-    foaf:dateOfBirth "1972-11-19"^^schema:Date .
+    schema:email "mailto:luk.verhelst@vlaanderen.be" ;
+    foaf:dateOfBirth "1972-11-19"^^xsd:date ;
+    schema:jobTitle "Data Engineer" .
+
+<webid.ttl#this> a foaf:PersonalProfileDocument ;
+    foaf:maker <webid.ttl#this> ;
+    foaf:primaryTopic <webid.ttl#this> .
+
+<https://pietercolpaert.be/teaching/kg/#2023-2024>
+    a schema:CourseInstance;
+    schema:attendee <#me> .
