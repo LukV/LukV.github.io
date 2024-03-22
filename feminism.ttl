@@ -1,0 +1,22 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/> .
+
+<http://www.wikidata.org/entity/Q22121056>
+    a schema:Book ;
+    dc:title "We Should All Be Feminists" ;
+    dc:creator "Chimamanda Ngozi Adichie" ;
+    dc:date "2014" .
+
+<https://www.wikidata.org/wiki/Q470098>
+    a schema:Book ;
+    dc:title "The Second Sex" ;
+    dc:creator "Simone de Beauvoir" ;
+    dc:date "1949" ;
+    dc:description "A foundational tract of contemporary feminism."  .
+
+<https://www.wikidata.org/wiki/Q18390539>
+    a schema:Book ;
+    dc:title "Men Explain Things to Me" ;
+    dc:creator "Rebecca Solnit" ;
+    dc:date "2014" ;
+    dc:description "A collection of essays on the silencing of women, notoriously 'mansplaining'."  .
