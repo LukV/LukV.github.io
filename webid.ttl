@@ -17,6 +17,6 @@
        cert:exponent "65537"^^xsd:nonNegativeInteger
       ] ;
    solid:oidcIssuerRegistrationToken "89e81a1a-e7bb-4012-b78c-88637b35a8d8" ;
-   solid:oidcIssuer <http://localhost:3000> . 
+   solid:oidcIssuer <http://localhost:3000> , <https://pod.playground.solidlab.be/> . 
 
 <#this> solid:oidcIssuer <https://pod.playground.solidlab.be/>.
