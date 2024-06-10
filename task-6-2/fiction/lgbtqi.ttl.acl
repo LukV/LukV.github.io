@@ -1,0 +1,9 @@
+<https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/.acl#owner> a <http://www.w3.org/ns/auth/acl#Authorization>;
+    <http://www.w3.org/ns/auth/acl#agent> <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/profile/card#me>;
+    <http://www.w3.org/ns/auth/acl#mode> <http://www.w3.org/ns/auth/acl#Read>, <http://www.w3.org/ns/auth/acl#Control>;
+    <http://www.w3.org/ns/auth/acl#accessTo> <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-2/fiction/lgbtqi.ttl>;
+    <http://www.w3.org/ns/auth/acl#default> <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-2/fiction/lgbtqi.ttl>.
+<#1711399410697> a <http://www.w3.org/ns/auth/acl#Authorization>;
+    <http://www.w3.org/ns/auth/acl#agent> <http://example.com/alice/profile/card#me>;
+    <http://www.w3.org/ns/auth/acl#mode> <http://www.w3.org/ns/auth/acl#Read>;
+    <http://www.w3.org/ns/auth/acl#accessTo> <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-2/fiction/lgbtqi.ttl>.

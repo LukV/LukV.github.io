@@ -1,0 +1,21 @@
+@prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+<#nicoCoco>
+    a foaf:Person ;
+    foaf:name "Nico Coco" .
+
+<https://www.wikidata.org/wiki/Q462>
+    a schema:Book ;
+    schema:name "Star Wars" .
+
+<#review1>
+    a schema:Review ;
+    schema:author <#nicoCoco> ;
+    schema:reviewRating [
+        a schema:Rating ;
+        schema:ratingValue "5"^^xsd:int
+    ] ;
+    schema:reviewBody "EPIC Space Opera multimedia franchise" ;
+    schema:itemReviewed <https://www.wikidata.org/wiki/Q462> .

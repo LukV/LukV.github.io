@@ -1,0 +1,15 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/> .
+
+<https://www.wikidata.org/wiki/Q7618885>
+    a schema:Book ;
+    dc:title "Stone Butch Blues" ;
+    dc:creator "Leslie Feinberg" ;
+    dc:date "1993" ;
+    dc:description "Being a butch lesbian." .
+
+<https://www.wikidata.org/wiki/Q1629456>
+    a schema:Book ;
+    dc:title "Orlando : A Biography" ;
+    dc:creator "Virginia Woolf" ;
+    dc:date "1928" .

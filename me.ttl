@@ -19,7 +19,8 @@
 
 <webid.ttl#this> a foaf:PersonalProfileDocument ;
     foaf:maker <webid.ttl#this> ;
-    foaf:primaryTopic <webid.ttl#this> .
+    foaf:primaryTopic <webid.ttl#this> ;
+    solid:oidcIssuerRegistrationToken "89e81a1a-e7bb-4012-b78c-88637b35a8d8".
 
 <https://pietercolpaert.be/teaching/kg/#2023-2024>
     a schema:CourseInstance;

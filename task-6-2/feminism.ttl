@@ -1,0 +1,32 @@
+@prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+<#carolineMatildaHenley>
+    a foaf:Person ;
+    foaf:name "Caroline-Matilda Henley" .
+
+<#brunaMiranda>
+    a foaf:Person ;
+    foaf:name "Bruna Miranda" .
+
+<http://www.wikidata.org/entity/Q22121056>
+    a schema:Book ;
+    schema:name "We Should All Be Feminists" .
+
+<#review1>
+    a schema:Review ;
+    schema:author <#carolineMatildaHenley> ;
+    schema:reviewRating [
+        a schema:Rating ;
+        schema:ratingValue "5"^^xsd:int
+    ] ;
+    schema:reviewBody "This book is so, so good. My English teacher gave this book to me on my last day of college, and it's remained my favourite book ever since." ;
+    schema:itemReviewed <http://www.wikidata.org/entity/Q22121056> .
+
+
+<#review2>
+    a schema:Review ;
+    schema:author <#brunaMiranda> ;
+    schema:reviewBody "I used to have a very wrong and distorted view about feminism to be honest. After reading her essay though, it enlightened my ideas." ;
+    schema:itemReviewed <http://www.wikidata.org/entity/Q22121056> .

@@ -1,0 +1,12 @@
+@prefix acl: <http://www.w3.org/ns/auth/acl#> .
+
+<https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/.acl#owner> a acl:Authorization ;
+    acl:agent <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/profile/card#me>;
+    acl:mode acl:Read, acl:Control ;
+    acl:accessTo <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/lgbtqi.ttl> ;
+    acl:default <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/lgbtqi.ttl> .
+
+<https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/.acl#read> a acl:Authorization ;
+    acl:agent <http://example.com/alice/profile/card#me> ;
+    acl:mode acl:Read, acl:Append ;
+    acl:accessTo <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/lgbtqi.ttl> .

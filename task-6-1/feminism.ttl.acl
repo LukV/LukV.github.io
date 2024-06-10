@@ -1,0 +1,12 @@
+@prefix acl: <http://www.w3.org/ns/auth/acl#> .
+
+<https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/.acl#owner> a acl:Authorization;
+    acl:agent <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/profile/card#me>;
+    acl:mode acl:Read, acl:Write, acl:Control;
+    acl:accessTo <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/feminism.ttl>;
+    acl:default <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/feminism.ttl>.
+
+<https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/feminism.ttl#public> a acl:Authorization;
+    acl:mode acl:Read;
+    acl:accessTo <https://lab6.e018160a.idlab.ugent.be/Luk-Verhelst/task-6-1/feminism.ttl>;
+    acl:agentClass <http://xmlns.com/foaf/0.1/Agent>.
